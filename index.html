@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan de Bienestar de Carlos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              progress: '#4CAF50', // green
+              calm: '#2196F3',     // blue
+              motivation: '#9C27B0', // purple
+              primary: {
+                DEFAULT: '#6366F1', // indigo-500
+                light: '#818CF8',   // indigo-400
+                dark: '#4F46E5',    // indigo-600
+              },
+              secondary: '#10B981', // emerald-500
+              background: '#F3F4F6', // gray-100
+              surface: '#FFFFFF', // white
+              textPrimary: '#1F2937', // gray-800
+              textSecondary: '#6B7280', // gray-500
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1"
+  }
+}
+</script>
+</head>
+<body class="bg-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
